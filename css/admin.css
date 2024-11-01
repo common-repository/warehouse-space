@@ -1,0 +1,86 @@
+
+.warehousespace-notice {
+    margin-top: 10px;
+    margin-left: 0;
+    padding: 9px;
+}
+.warehousespace-heading span {
+    color:#01bfa5;
+}
+.warehousespace-heading img {
+    margin-right: 5px;
+    float: left;
+}
+.warehousespace-heading {
+    line-height: 28px;
+    vertical-align: middle;
+}
+.warehousespace-horizontal-form-element {
+    float: left;
+    margin-right: 5px;
+}
+.warehousespace-horizontal-form-wrapper {
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.warehousespace-horizontal-form-element input[name="accountkey"] {
+    width: 186px;
+}
+.warehousespace-horizontal-form-element input[name="warehouse"] {
+    width: 73px;
+}
+progress {
+    width: 215px;
+    height: 18px;
+    /* margin: 50px auto; */
+    display: block;
+    -webkit-appearance: none;
+    border: none;
+}
+
+/* All good till now. Now we'll style the background */
+progress::-webkit-progress-bar {
+    background: transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.1);
+    border: 1px solid #bdbdbd;
+}
+
+/* Now the value part */
+progress::-webkit-progress-value {
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.1);
+    box-shadow: inset 0px 4px 4px 0px rgba(0,0,0,0.1);
+    background:
+        -webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+        -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+        -webkit-linear-gradient(left, #3cc6af, #43a493);
+    
+    /* Looks great, now animating it */
+    background-size: 25px 14px, 100% 100%, 100% 100%;
+    -webkit-animation: move 5s linear 0 infinite;
+}
+
+/* That's it! Now let's try creating a new stripe pattern and animate it using animation and keyframes properties  */
+
+@-webkit-keyframes move {
+    0% {background-position: 0px 0px, 0 0, 0 0}
+    100% {background-position: -100px 0px, 0 0, 0 0}
+}
+
+.warehousespace-important {
+    font-weight: bold;
+    color:#01bfa5;
+}
+.statistics {
+    margin-top: 10px;
+}
+.image-centered-with-desc {
+    text-align: center;
+}
+.image-centered-with-desc span {
+    font-style: italic;
+} 
